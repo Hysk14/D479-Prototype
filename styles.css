@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     text-align: center;
 }
@@ -24,8 +29,64 @@ header {
     font-size: 20px;
 }
 
-.home-top-image img{
+.home-top-image img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
+}
+
+.home-content {
+
+}
+
+.home-content-image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.home-content-image img {
+    width: 95%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 20px;
+    border: #050000 solid 1.5px;
+    border-radius: 10px;
+}
+
+.hero-button {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 18px 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1.5px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.2s ease;
+
+}
+
+.hero-button:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
+.home-content-text {
+    padding: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.home-content-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    margin-top: 0;
+    text-align: center;
+}
+
+.home-content-text p {
+    width: 95%;
+    text-align: center;
 }
