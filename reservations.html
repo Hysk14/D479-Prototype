@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -12,7 +14,7 @@
 
     <header>
         <div class="title-section">
-            <h1>Welcome to Taniti!</h1>
+            <h1>Reservations</h1>
         </div>
 
         <nav class="nav-bar">
@@ -24,8 +26,52 @@
     </header>
 
     <main>
+        <div class="reservation-main-content">
+            <form class="popup-form reservation-form" id="reservation-form">
 
-        <p>Book your reservation's today!</p>
+                <h2>Book Your Reservation</h2>
+
+                <div class="reservation-form-left">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+
+                    </div>
+                </div>
+
+                <div class="reservation-form-right">
+                    <div class="form-group">
+                        <label for="available-date">Available Date:</label>
+                        <input type="date" id="available-date" name="available-date" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="details">Details:</label>
+                        <textarea id="details" name="details"
+                            placeholder="Please provide any additional details or special requests..."
+                            required></textarea>
+
+                    </div>
+                </div>
+
+                <div class="reservation-form-button">
+                    <button class="reservations-submit-button" type="submit">Submit Reservation</button>
+                </div>
+            </form>
+        </div>
 
     </main>
 
@@ -33,7 +79,15 @@
         <p>© Taniti Tourism Board</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Reservation Submitted</h2>
+            <p>Thank you for your reservation! We will get back to you shortly.</p>
+            <button type="button" id="close-popup">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
